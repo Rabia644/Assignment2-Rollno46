@@ -1,4 +1,4 @@
-﻿namespace MainLauncher
+﻿namespace Firstform
 {
     partial class Form1
     {
@@ -28,73 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnProject1 = new Button();
-            btnProject2 = new Button();
-            btnProject3 = new Button();
-            btnProject4 = new Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
+            label2 = new Label();
+            button1 = new Button();
+            txtPass = new TextBox();
+            txtUser = new TextBox();
             SuspendLayout();
-            // 
-            // btnProject1
-            // 
-            btnProject1.Location = new Point(212, 126);
-            btnProject1.Name = "btnProject1";
-            btnProject1.Size = new Size(112, 34);
-            btnProject1.TabIndex = 0;
-            btnProject1.Text = "Project1";
-            btnProject1.UseVisualStyleBackColor = true;
-            btnProject1.Click += btnProject1_Click_1;
-            // 
-            // btnProject2
-            // 
-            btnProject2.Location = new Point(378, 126);
-            btnProject2.Name = "btnProject2";
-            btnProject2.Size = new Size(112, 34);
-            btnProject2.TabIndex = 1;
-            btnProject2.Text = "Project2";
-            btnProject2.UseVisualStyleBackColor = true;
-            btnProject2.Click += btnProject2_Click_1;
-            // 
-            // btnProject3
-            // 
-            btnProject3.Location = new Point(212, 202);
-            btnProject3.Name = "btnProject3";
-            btnProject3.Size = new Size(112, 34);
-            btnProject3.TabIndex = 2;
-            btnProject3.Text = "Project3";
-            btnProject3.UseVisualStyleBackColor = true;
-            btnProject3.Click += btnProject3_Click_1;
-            // 
-            // btnProject4
-            // 
-            btnProject4.Location = new Point(378, 202);
-            btnProject4.Name = "btnProject4";
-            btnProject4.Size = new Size(112, 34);
-            btnProject4.TabIndex = 3;
-            btnProject4.Text = "Project4";
-            btnProject4.UseVisualStyleBackColor = true;
-            btnProject4.Click += btnProject4_Click_1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(255, 43);
+            label1.Location = new Point(174, 94);
             label1.Name = "label1";
-            label1.Size = new Size(211, 38);
-            label1.TabIndex = 4;
-            label1.Text = "Rabia roll no 46";
+            label1.Size = new Size(91, 25);
+            label1.TabIndex = 0;
+            label1.Text = "Username";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(174, 180);
+            label2.Name = "label2";
+            label2.Size = new Size(87, 25);
+            label2.TabIndex = 1;
+            label2.Text = "Password";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(243, 282);
+            button1.Name = "button1";
+            button1.Size = new Size(139, 34);
+            button1.TabIndex = 2;
+            button1.Text = "Login\r\n\r\n";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // txtPass
+            // 
+            txtPass.Location = new Point(318, 180);
+            txtPass.Name = "txtPass";
+            txtPass.Size = new Size(215, 31);
+            txtPass.TabIndex = 3;
+            txtPass.UseSystemPasswordChar = true;
+            // 
+            // txtUser
+            // 
+            txtUser.Location = new Point(318, 94);
+            txtUser.Name = "txtUser";
+            txtUser.Size = new Size(215, 31);
+            txtUser.TabIndex = 4;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.ButtonFace;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(720, 484);
+            Controls.Add(txtUser);
+            Controls.Add(txtPass);
+            Controls.Add(button1);
+            Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(btnProject4);
-            Controls.Add(btnProject3);
-            Controls.Add(btnProject2);
-            Controls.Add(btnProject1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -103,10 +99,10 @@
 
         #endregion
 
-        private Button btnProject1;
-        private Button btnProject2;
-        private Button btnProject3;
-        private Button btnProject4;
         private Label label1;
+        private Label label2;
+        private Button button1;
+        private TextBox txtPass;
+        private TextBox txtUser;
     }
 }
