@@ -1,4 +1,4 @@
-﻿namespace Firstform
+﻿namespace calculator
 {
     partial class Form1
     {
@@ -28,81 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            label1 = new Label();
-            label2 = new Label();
-            button1 = new Button();
-            txtPass = new TextBox();
-            txtUser = new TextBox();
+            lblUsername = new Label();
+            lblPassword = new Label();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
+            btnLogin = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lblUsername
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(174, 94);
-            label1.Name = "label1";
-            label1.Size = new Size(91, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Username";
+            lblUsername.AutoSize = true;
+            lblUsername.Location = new Point(50, 30);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(91, 25);
+            lblUsername.TabIndex = 0;
+            lblUsername.Text = "Username";
             // 
-            // label2
+            // lblPassword
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(174, 180);
-            label2.Name = "label2";
-            label2.Size = new Size(87, 25);
-            label2.TabIndex = 1;
-            label2.Text = "Password";
+            lblPassword.AutoSize = true;
+            lblPassword.Location = new Point(50, 70);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(87, 25);
+            lblPassword.TabIndex = 1;
+            lblPassword.Text = "Password";
             // 
-            // button1
+            // txtUsername
             // 
-            button1.Location = new Point(243, 282);
-            button1.Name = "button1";
-            button1.Size = new Size(139, 34);
-            button1.TabIndex = 2;
-            button1.Text = "Login\r\n\r\n";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            txtUsername.Location = new Point(150, 30);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(150, 31);
+            txtUsername.TabIndex = 2;
             // 
-            // txtPass
+            // txtPassword
             // 
-            txtPass.Location = new Point(318, 180);
-            txtPass.Name = "txtPass";
-            txtPass.Size = new Size(215, 31);
-            txtPass.TabIndex = 3;
-            txtPass.UseSystemPasswordChar = true;
+            txtPassword.Location = new Point(150, 70);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
+            txtPassword.Size = new Size(150, 31);
+            txtPassword.TabIndex = 3;
             // 
-            // txtUser
+            // btnLogin
             // 
-            txtUser.Location = new Point(318, 94);
-            txtUser.Name = "txtUser";
-            txtUser.Size = new Size(215, 31);
-            txtUser.TabIndex = 4;
+            btnLogin.Location = new Point(150, 110);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(112, 34);
+            btnLogin.TabIndex = 4;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click_1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonFace;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(720, 484);
-            Controls.Add(txtUser);
-            Controls.Add(txtPass);
-            Controls.Add(button1);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnLogin);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
+            Controls.Add(lblPassword);
+            Controls.Add(lblUsername);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Login";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Button button1;
-        private TextBox txtPass;
-        private TextBox txtUser;
+        private Label lblUsername;
+        private Label lblPassword;
+        private TextBox txtUsername;
+        private TextBox txtPassword;
+        private Button btnLogin;
     }
 }
